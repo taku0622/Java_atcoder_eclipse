@@ -15,6 +15,4 @@ public class Hello {
 		// TODO 自動生成されたメソッド・スタブ
 		System.out.println("hello, eclipse, hey");
 	}
-
-
 }
