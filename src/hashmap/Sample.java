@@ -11,7 +11,7 @@ public class Sample {
 		hm.put(nengo[2], 1926);
 		hm.put(nengo[3], 1980);
 		for(String s:nengo) {
-			System.out.println(s+"元年は、西暦 " + hm.get(s));
+			System.out.println(s+"元年は、西暦 " + hm.get(s) + "年");
 		}
 	}
 
