@@ -18,6 +18,4 @@ public class ABC204_A {
 		int ans = il[0] == il[1] ? il[0] : 3 - (il[0]+il[1]);
 		System.out.println(ans);
 	}
-
-
 }
