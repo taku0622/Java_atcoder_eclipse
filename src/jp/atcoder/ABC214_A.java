@@ -3,24 +3,24 @@ package jp.atcoder;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class ABC214_A {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String st = br.readLine();
 		String str = br.readLine();
 		String[] sa = str.split(" ");
-		int[] il = new int[sa.length];
-		for(int i=0;i<sa.length;i++) { il[i] = Integer.parseInt(sa[i]); }
-		int ans = 0;
-		if(il[0] < 126) {
-			ans = 4;
-		}else if (il[0] < 212) {
-			ans = 6;
-		}else {
-			ans = 8;
+		Map<Integer,Integer> tmap = new TreeMap<Integer,Integer>();
+		for(int i=1;i<=sa.length;i++) {
+			tmap.put(Integer.parseInt(sa[i-1]), i);
 		}
-		System.out.println(ans);
+		ArrayList<Integer> list = new ArrayList<Integer>(tmap.values());
+ 		System.out.println(list.get(list.size()-2));
+
 	}
 
 }
