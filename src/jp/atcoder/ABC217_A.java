@@ -12,9 +12,7 @@ public class ABC217_A {
 		String[] sa = str.split(" ");
 //		int[] il = new int[sa.length];
 //		for(int i=0;i<sa.length;i++) { il[i] = Integer.parseInt(sa[i]); }
-		String ans = (sa[0].compareTo(sa[1]))==-1 ? "Yes" : "No";
+		String ans = (sa[0].compareTo(sa[1]))<0 ? "Yes" : "No";
 		System.out.println(ans);
 	}
-
-
 }
