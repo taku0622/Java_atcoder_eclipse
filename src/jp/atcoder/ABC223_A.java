@@ -10,11 +10,8 @@ public class ABC223_A {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
 		int x = Integer.parseInt(str);
-		if(x>0 && x%100==0) {
-			System.out.println("Yes");
-		}else {
-			System.out.println("No");
-		}
+		String ans = (x>0 && x%100==0)? "Yes" : "No";
+		System.out.println(ans);
 	}
 
 }
