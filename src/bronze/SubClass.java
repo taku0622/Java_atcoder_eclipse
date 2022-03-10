@@ -1,31 +1,23 @@
 package bronze;
 
 public class SubClass extends SuperClass {
-	private int a;
-	private int b;
-
-	public SubClass(int a) {
-		// super();
-		this.a = a;
+	public void print() {
+		System.out.println("Sub");
 	}
-
-	public SubClass(int a, int b) {
-		this(a);
-		this.b = b;
-	}
-
 	public static void main(String[] args) {
-		SubClass subClass = new SubClass(2, 3);
-		System.out.println(subClass.num + ":" + subClass.a + ":" + subClass.b);
+		SuperClass superClass = new SuperClass();
+		superClass.print();
+//		SubClass subClass = (SubClass) superClass;
+//		subClass.print();
 	}
 
 }
 class SuperClass {
-	protected int num;
-//	public SuperClass() {
-//		this.num = 1;
-//	}
-	public SuperClass(int num) {
-		this.num = num;
+	int a = 1;
+	double b = 2.0;
+	int i = (int)b;
+	public void print() {
+		System.out.println("super");
+		System.out.println(i);
 	}
 }
