@@ -1,16 +1,12 @@
 package bronze;
 
 public class Sample {
-	void fuga() {
-		this.hoge();
-	}
-	private void hoge() {
-		System.out.println("hoge");
-	}
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		Sample sample = new Sample();
-		sample.fuga();
+		int i = 0;
+		do {
+			System.out.println(i);
+			i--;// 2,1,0
+		} while (i > 0);
 	}
 
 }
