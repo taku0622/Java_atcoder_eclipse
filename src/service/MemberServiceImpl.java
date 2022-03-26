@@ -8,14 +8,19 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public String greet(int i) {
-		String greeting = {"Good moring","Hello","Good evening"};
-		return greeting[i];
+		String[] greetings = {"Good moring","Hello","Good evening"};
+		return greetings[i];
 	}
 
 	@Override
 	public ArrayList<Member> getAll() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+		ArrayList<Member> list = new ArrayList<>();
+		Member mem1 = new Member(1,"Linda","linda@example.com");
+		Member mem2 = new Member(2,"James","james@example.com");
+		list.add(mem1);
+		list.add(mem2);
+
+		return list;
 	}
 
 }
