@@ -20,11 +20,17 @@ public class ABC245_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-//		goodMorning(sl,n);
-		System.out.println(il);
-
+		goodMorning(il);
 	}
-	private static void goodMorning(ArrayList<String> sl,int n) {
-		System.out.println(sl.get(n-1));
+	private static void goodMorning(ArrayList<Integer> il) {
+		ArrayList<String> sl = new ArrayList<String>();
+		for(int i:il) {
+			sl.add(String.format("%02d", i));
+		}
+		int a = Integer.parseInt(sl.get(0) + sl.get(1));
+		int b = Integer.parseInt(sl.get(2) + sl.get(3));
+
+		String ans = a <= b ? "Takahashi" : "Aoki";
+		System.out.println(ans);
 	}
 }
