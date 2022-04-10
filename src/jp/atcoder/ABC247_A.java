@@ -23,13 +23,16 @@ public class ABC247_A {
 		moveRight(il);
 	}
 	private static void moveRight(ArrayList<Integer> il) {
-		System.out.println(il);
 		il.add(0);
 		for(int i=4;i>0;i--) {
 			il.set(i,il.get(i-1));
 		}
 		il.remove(4);
-		System.out.println(il);
-		String ans = ""
+		il.set(0, 0);
+		String ans = "";
+		for(int i:il) {
+			ans += String.valueOf(i);
+		}
+		System.out.println(ans);
 	}
 }
