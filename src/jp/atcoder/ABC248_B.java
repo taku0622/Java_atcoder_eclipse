@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class ABC248_B {
-
 	public static void main(String[] args) {
 		String str1;
 		try {
