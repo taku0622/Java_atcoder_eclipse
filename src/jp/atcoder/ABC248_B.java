@@ -15,7 +15,6 @@ public class ABC248_B {
 			System.out.println("Input Error!!");
 			return;
 		}
-
 		String[] sa = str1.split(" ");
 		ArrayList<Integer> il = new ArrayList<Integer>();
 		for(String s:sa) {
