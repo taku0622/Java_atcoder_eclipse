@@ -41,6 +41,5 @@ public class ABC249_A {
 		}else {
 			System.out.println("Aoki");
 		}
-
 	}
 }
