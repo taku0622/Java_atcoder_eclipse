@@ -19,6 +19,7 @@ public class Sample {
 
 		String string = "abcde";
 		System.out.println(string.indexOf('c'));	// 2
+		System.out.println(string.indexOf('f'));	// 2
 		System.out.println(string.indexOf("cd"));	// 2
 		System.out.println(string.indexOf("cdf"));	// -1
 	}
