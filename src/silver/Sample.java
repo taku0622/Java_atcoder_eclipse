@@ -17,11 +17,14 @@ public class Sample {
 //		System.out.println(c);
 //		System.out.println(d);
 
-		String string = "abcde";
-		System.out.println(string.indexOf('c'));	// 2
-		System.out.println(string.indexOf('f'));	// 2
-		System.out.println(string.indexOf("cd"));	// 2
-		System.out.println(string.indexOf("cdf"));	// -1
+//		String string = "abcde";
+//		System.out.println(string.indexOf('c'));	// 2
+//		System.out.println(string.indexOf('f'));	// -1
+//		System.out.println(string.indexOf("cd"));	// 2
+//		System.out.println(string.indexOf("cdf"));	// -1
+
+		String string = "aaaa";
+		System.out.println(string.replace("aa", "b"));;
 	}
 
 }
