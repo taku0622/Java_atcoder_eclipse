@@ -23,8 +23,11 @@ public class Sample {
 //		System.out.println(string.indexOf("cd"));	// 2
 //		System.out.println(string.indexOf("cdf"));	// -1
 
-		String string = "aaaa";
-		System.out.println(string.replace("aa", "b"));;
+//		String string = "aaaa";
+//		System.out.println(string.replace("aa", "b"));;
+
+		String string = "hello, ".concat("Java!");
+		System.out.println(string);
 	}
 
 }
