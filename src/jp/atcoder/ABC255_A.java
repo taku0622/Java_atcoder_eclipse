@@ -33,9 +33,10 @@ public class ABC255_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-		lastTwoDigits(il);
+		ARCthoughABC(il);
 	}
-	private static void lastTwoDigits(ArrayList<Integer> il) {
-		System.out.println("" + il.get(1) + il.get(2));
+	private static void ARCthoughABC(ArrayList<Integer> il) {
+		int[][] arr = {{il.get(2),il.get(3)},{il.get(4),il.get(5)}};
+		System.out.println(arr[il.get(0)-1][il.get(1)-1]);
 	}
 }
