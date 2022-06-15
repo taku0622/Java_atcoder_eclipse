@@ -26,8 +26,13 @@ public class Sample {
 //		String string = "aaaa";
 //		System.out.println(string.replace("aa", "b"));;
 
-		String string = "hello, ".concat("Java!");
-		System.out.println(string);
+//		String string = "hello, ".concat("Java!");
+//		System.out.println(string);
+//		String string = null;
+//		string += "null";
+//		System.out.println(string);
+		int a = 10;
+		int b = a++ + a + a-- - a-- + ++a; 	// b = 10 + 11 + 11 - 11 + 11
+		System.out.println(b);				// 32
 	}
-
 }
