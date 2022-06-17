@@ -31,8 +31,19 @@ public class Sample {
 //		String string = null;
 //		string += "null";
 //		System.out.println(string);
-		int a = 10;
-		int b = a++ + a + a-- - a-- + ++a; 	// b = 10 + 11 + 11 - 11 + 11
-		System.out.println(b);				// 32
+//		int a = 10;
+//		int b = a++ + a + a-- - a-- + ++a; 	// b = 10 + 11 + 11 - 11 + 11
+//		System.out.println(b);				// 32
+//
+//		for (int i = 0; i < 3; i++, period()) {
+//			System.out.print(i);
+//		}
+		String[][] array = {{"A","B","C"}};
+		for(Object object : array) {
+			System.out.println(object);
+		}
+	}
+	private static void period() {
+		System.out.print(",");
 	}
 }
