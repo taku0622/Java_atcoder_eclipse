@@ -38,10 +38,16 @@ public class Sample {
 //		for (int i = 0; i < 3; i++, period()) {
 //			System.out.print(i);
 //		}
-		String[][] array = {{"A","B","C"}};
-		for(Object object : array) {
-			System.out.println(object);
-		}
+//		String[][] array = {{"A","B","C"}};
+//		for(Object object : array) {
+//			System.out.println(object);
+//		}
+//		int num = 10;
+//		do {
+//			num++;
+//		} while (++num < 10);
+//		System.out.println(num);
+
 	}
 	private static void period() {
 		System.out.print(",");
