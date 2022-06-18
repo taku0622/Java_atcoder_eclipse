@@ -23,13 +23,13 @@ class Ex1_07_2 {
 		short  calc3_1 = 7 ;                             //(22行目)変更しないでください
 		String calc3_2 = "8" ;                           //(23行目)変更しないでください
 		int    calc3_3 = 9 ;                             //(24行目)変更しないでください
-		String    answer3 = calc3_1 + calc3_2 + calc3_3 ;   //(25行目)処理が正常に通るようにデバッグしてください
+		int   answer3 = calc3_1 + Integer.parseInt(calc3_2) + calc3_3 ;   //(25行目)処理が正常に通るようにデバッグしてください
 		System.out.println( answer3 );                   //(26行目)「24」が表示されているか確認してください
 
 
 		int    calc4_1 = 10 ;                            //(29行目)変更しないでください
 		long   calc4_2 = 11 ;                            //(30行目)変更しないでください
-		long    answer4 = calc4_1 + calc4_2 ;             //(31行目)処理が正常に通るようにデバッグしてください（キャストを使用してください）
+		int    answer4 = calc4_1 + (int)calc4_2 ;             //(31行目)処理が正常に通るようにデバッグしてください（キャストを使用してください）
 		System.out.println( answer4 );                   //(32行目)「21」が表示されているか確認してください
 
 	}
