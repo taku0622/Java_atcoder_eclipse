@@ -1,3 +1,4 @@
+package udemy01;
 /*-< 演習：Ex1_10_3 >---------------------------------
 以下のように00～99までの数字を並べて表示するプログラムを作成してください。
 
@@ -15,21 +16,13 @@
 ----------------------------------------------------*/
 class Ex1_10_3 {
 	public static void main (String[] args) {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		int sum = 0;
+		for(int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				System.out.print(String.format("%02d", sum) + " ");
+				sum++;
+			}
+			System.out.println();
+		}
 	}
 }
