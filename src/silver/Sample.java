@@ -48,15 +48,23 @@ public class Sample {
 //		} while (++num < 10);
 //		System.out.println(num);
 
-		int total = 0;
-		a: for (int i = 0; i < 5; i++) {
-			b: for (int j = 0; j < 5; j++) {
-				if (i % 2 == 0) continue a;
-				if (3 < j) break b;
-				total += j;
-				}
-			}
-		System.out.println(total);
+//		int total = 0;
+//		a: for (int i = 0; i < 5; i++) {
+//			b: for (int j = 0; j < 5; j++) {
+//				if (i % 2 == 0) continue a;
+//				if (3 < j) break b;
+//				total += j;
+//				}
+//			}
+//		System.out.println(total);
+
+		int[] a;		// 1次元配列
+		int b[];		// 1次元配列
+		int[][] c;		// 3次元配列
+		int d[][];		// 2次元配列
+		int[] e[];		// 2次元配列
+		int[][] f[];	// 3次元配列
+
 	}
 	private static void period() {
 		System.out.print(",");
