@@ -33,10 +33,10 @@ class Ex1_10_4 {
 			int i = 0;
 			for(String info : animal) {
 				System.out.print(info);
-				i++; // 1 2 3
-				if(i < 4) {
+				if(i < 3) {
 					System.out.print(" / ");
 				}
+				i++;
 			}
 			System.out.println();
 		}
