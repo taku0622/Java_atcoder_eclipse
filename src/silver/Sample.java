@@ -85,6 +85,12 @@ public class Sample {
 //		aItem = bItem;
 //		System.out.println(aItem.toString());
 //		System.out.println(bItem.toString());
+		Object aObject = new Object();
+		Object bObject = new Object();
+		Object cObject = aObject;
+		aObject = null;
+		bObject = null;
+		// more code この時点でbObjectがガベージコレクションの対象になる。
 
 	}
 	private static void period() {
