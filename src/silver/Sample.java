@@ -70,9 +70,12 @@ public class Sample {
 //			System.out.println(string);
 //		}
 //		System.out.println(st);
-
-		int e[];
-		e = {2,3};
+		int[] arrayA = {1,2,3};
+		int[] arrayB = arrayA.clone();
+		System.out.println(arrayA == arrayB);
+		System.out.println(arrayA.equals(arrayB));
+		System.out.println("arrayA= {" + arrayA[0] +","+ arrayA[1] +","+ arrayA[2] +"}");
+		System.out.println("arrayB= {" + arrayB[0] +","+ arrayB[1] +","+ arrayB[2] +"}");
 	}
 	private static void period() {
 		System.out.print(",");
