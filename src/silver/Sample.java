@@ -76,7 +76,15 @@ public class Sample {
 //		System.out.println(arrayA.equals(arrayB));
 //		System.out.println("arrayA= {" + arrayA[0] +","+ arrayA[1] +","+ arrayA[2] +"}");
 //		System.out.println("arrayB= {" + arrayB[0] +","+ arrayB[1] +","+ arrayB[2] +"}");
-
+//		Item aItem = new Item();
+//		Item bItem = new Item();
+//		aItem.name = "apple";
+//		aItem.price = 200;
+//		bItem.name = "banana";
+//		bItem.price = 100;
+//		aItem = bItem;
+//		System.out.println(aItem.toString());
+//		System.out.println(bItem.toString());
 
 	}
 	private static void period() {
