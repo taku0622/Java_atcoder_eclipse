@@ -57,14 +57,22 @@ public class Sample {
 //				}
 //			}
 //		System.out.println(total);
+//
+//		int[] a;		// 1次元配列
+//		int b[];		// 1次元配列
+//		int[][] c;		// 3次元配列
+//		int d[][];		// 2次元配列
+//		int[] e[];		// 2次元配列
+//		int[][] f[];	// 3次元配列
+//		String st = null;
+//		String[] array = {null,"B","C","D"};
+//		for(String string : array) {
+//			System.out.println(string);
+//		}
+//		System.out.println(st);
 
-		int[] a;		// 1次元配列
-		int b[];		// 1次元配列
-		int[][] c;		// 3次元配列
-		int d[][];		// 2次元配列
-		int[] e[];		// 2次元配列
-		int[][] f[];	// 3次元配列
-
+		int e[];
+		e = {2,3};
 	}
 	private static void period() {
 		System.out.print(",");
