@@ -85,13 +85,20 @@ public class Sample {
 //		aItem = bItem;
 //		System.out.println(aItem.toString());
 //		System.out.println(bItem.toString());
-		Object aObject = new Object();
-		Object bObject = new Object();
-		Object cObject = aObject;
-		aObject = null;
-		bObject = null;
-		// more code この時点でbObjectがガベージコレクションの対象になる。
-
+//		Object aObject = new Object();
+//		Object bObject = new Object();
+//		Object cObject = aObject;
+//		aObject = null;
+//		bObject = null;
+//		// more code この時点でbObjectがガベージコレクションの対象になる。
+		String aString = new String("aaa");
+		String bString = new String("bbb");
+		String cString = aString;
+		aString = null;
+		bString = null;
+		System.out.println(aString);
+		System.out.println(bString);
+		System.out.println(cString);
 	}
 	private static void period() {
 		System.out.print(",");
