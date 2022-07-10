@@ -1,9 +1,10 @@
 package silver;
 
 public class Item {
-	static int num;
-	static {
-		num = 100;
+	public Item() {
+		this(0, 0);
 	}
-
+	public Item(int a, int b) {
+		System.out.println(a + b);
+	}
 }
