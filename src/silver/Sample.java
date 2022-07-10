@@ -100,7 +100,9 @@ public class Sample {
 //		System.out.println(bString);
 //		System.out.println(cString);
 //		period(9,3,4,5,6,7);
-		System.out.println(-1);
+//		System.out.println(-1);
+		Sample s = new Sample();
+		System.out.println(s.calc(0, 0));
 	}
 	private static void period(int... num) {
 		for(int i=0;i<num.length;i++) {
@@ -110,5 +112,11 @@ public class Sample {
 	private static void method(int num) {
 		if(num < 0) return;
 		System.out.println("A");
+	}
+	private double calc(int a,double b) {
+		return a + b;
+	}
+	private double calc(double a,int b) {
+		return a + b;
 	}
 }
