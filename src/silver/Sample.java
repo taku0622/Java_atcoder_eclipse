@@ -91,16 +91,26 @@ public class Sample {
 //		aObject = null;
 //		bObject = null;
 //		// more code この時点でbObjectがガベージコレクションの対象になる。
-		String aString = new String("aaa");
-		String bString = new String("bbb");
-		String cString = aString;
-		aString = null;
-		bString = null;
-		System.out.println(aString);
-		System.out.println(bString);
-		System.out.println(cString);
+//		String aString = new String("aaa");
+//		String bString = new String("bbb");
+//		String cString = aString;
+//		aString = null;
+//		bString = null;
+//		System.out.println(aString);
+//		System.out.println(bString);
+//		System.out.println(cString);
+//		period(9,3,4,5,6,7);
+
 	}
-	private static void period() {
-		System.out.print(",");
+	private static void period(int... num) {
+		for(int i=0;i<num.length;i++) {
+			System.out.print(num[i] + ",");
+		}
+	}
+	private static void method(int num) {
+		if(num < 0) return;
+		System.out.println("A");
+		return;
+		System.out.println("B");
 	}
 }
