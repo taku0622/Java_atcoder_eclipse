@@ -5,4 +5,5 @@ public class Item {
 	static {
 		num = 100;
 	}
+
 }
