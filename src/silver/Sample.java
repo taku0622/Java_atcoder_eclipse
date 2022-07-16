@@ -1,6 +1,6 @@
 package silver;
 
-public class Sample {
+public class Sample implements Interface {
 
 	public static void main(String[] args) {
 //		int a = 267;
@@ -108,8 +108,8 @@ public class Sample {
 //		modify(item.num);
 //		modify(item);
 //		System.out.println(item.num);
-		Interface inter = new Item();
-		inter.hello();
+		Sample sample = new Sample();
+		sample.hello();
 	}
 	private static void modify(int num) {
 		num*=2;
