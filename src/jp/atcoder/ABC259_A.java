@@ -32,7 +32,7 @@ public class ABC259_A {
 		if(n >= m && m >= x) {
 			ans = t;
 		}else {
-			ans = ((n-m) * d) - t;
+			ans = t - ((x-m) * d);
 		}
 		System.out.println(ans);
 	}
