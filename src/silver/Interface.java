@@ -1,7 +1,7 @@
 package silver;
 
 public interface Interface {
-	default void hello() {
-		System.out.println("hello");
+	default String hello() {
+		return "hello";
 	}
 }

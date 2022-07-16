@@ -1,8 +1,8 @@
 package silver;
 
-public class Item {
-	int num;
-	public Item(int num) {
-		this.num = num;
+public class Item implements Interface {
+	@Override
+	public String hello() {
+		return "HELLO";
 	}
 }

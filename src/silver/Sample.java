@@ -104,17 +104,17 @@ public class Sample {
 //		Sample s = new Sample();
 //		System.out.println(s.calc(0, 0));
 //		Item item = new Item();
-		Item item = new Item(10);
-		modify(item.num);
-		modify(item);
-		System.out.println(item.num);
+//		Item item = new Item(10);
+//		modify(item.num);
+//		modify(item);
+//		System.out.println(item.num);
+		Interface inter = new Item();
+		System.out.println(inter.hello());
 	}
 	private static void modify(int num) {
 		num*=2;
 	}
-	private static void modify(Item item) {
-		item.num*=2;
-	}
+
 	private static void period(int... num) {
 		for(int i=0;i<num.length;i++) {
 			System.out.print(num[i] + ",");
