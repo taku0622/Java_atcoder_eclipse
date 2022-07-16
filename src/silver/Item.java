@@ -1,8 +1,7 @@
 package silver;
 
-public class Item implements Interface {
-	@Override
-	public Integer hello() {
-		return 10;
+public class Item  {
+	protected void hello() {
+		System.out.println("hello");
 	}
 }
