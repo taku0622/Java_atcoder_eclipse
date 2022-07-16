@@ -109,7 +109,7 @@ public class Sample {
 //		modify(item);
 //		System.out.println(item.num);
 		Interface inter = new Item();
-		System.out.println(inter.hello());
+		inter.hello();
 	}
 	private static void modify(int num) {
 		num*=2;
