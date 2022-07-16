@@ -108,8 +108,14 @@ public class Sample implements Interface {
 //		modify(item.num);
 //		modify(item);
 //		System.out.println(item.num);
-		Sample sample = new Sample();
-		sample.hello();
+//		Sample sample = new Sample();
+//		sample.hello();
+		AClass a = new AClass();
+		AClass b = new BClass();
+		System.out.println(a.val);
+		System.out.println(b.val);
+		a.print();
+		b.print();
 	}
 	private static void modify(int num) {
 		num*=2;
