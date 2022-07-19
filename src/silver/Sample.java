@@ -118,9 +118,9 @@ public class Sample implements Interface {
 //		b.print();
 //		AClass b = new BClass();
 //		b.sample();  // コンパイルエラー　Aクラスには存在しないメソッド
-		AClass a = new AClass();
-		BClass b = (BClass)a; // コンパイルは通るが、実行時に例外がスローされる。
-		b.hello();
+		BClass b = new BClass();
+		b.name = "b";
+		System.out.println(b.getName());
 	}
 	private static void modify(int num) {
 		num*=2;
