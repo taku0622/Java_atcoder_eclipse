@@ -1,7 +1,8 @@
 package silver;
 
 public class AClass {
-	void hello() {
-		System.out.println("helloA");
+	String name;
+	String getName() {
+		return this.name;
 	}
 }

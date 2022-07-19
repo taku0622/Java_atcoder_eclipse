@@ -119,7 +119,7 @@ public class Sample implements Interface {
 //		AClass b = new BClass();
 //		b.sample();  // コンパイルエラー　Aクラスには存在しないメソッド
 		AClass a = new AClass();
-		BClass b = (BClass)a;
+		BClass b = (BClass)a; // コンパイルは通るが、実行時に例外がスローされる。
 		b.hello();
 	}
 	private static void modify(int num) {
