@@ -118,9 +118,10 @@ public class Sample implements Interface {
 //		b.print();
 //		AClass b = new BClass();
 //		b.sample();  // コンパイルエラー　Aクラスには存在しないメソッド
-		BClass b = new BClass();
-		b.name = "b";
-		System.out.println(b.getName());
+//		BClass b = new BClass();
+//		b.name = "b";
+//		System.out.println(b.getName());
+		AClass b = new BClass();
 	}
 	private static void modify(int num) {
 		num*=2;

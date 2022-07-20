@@ -1,7 +1,4 @@
 package silver;
 
-public interface Interface {
-	default Object hello() {
-		return 5;
-	}
+public interface Interface  {
 }
