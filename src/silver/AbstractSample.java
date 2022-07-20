@@ -6,5 +6,7 @@ public abstract class AbstractSample {
 		test();
 		System.out.println("C");
 	}
-	protected abstract void test();
+	protected void test() {
+		System.out.println("A~");
+	}
 }
