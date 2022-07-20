@@ -121,7 +121,9 @@ public class Sample implements Interface {
 //		BClass b = new BClass();
 //		b.name = "b";
 //		System.out.println(b.getName());
-		AClass b = new BClass();
+//		AClass b = new BClass();
+		AbstractSample s = new ConcreteSample();
+		s.sample();
 	}
 	private static void modify(int num) {
 		num*=2;
