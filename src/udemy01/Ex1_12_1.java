@@ -13,7 +13,7 @@ class Ex1_12_1 {
 				ans = "red point";
 			}
 		}else {
-			ans = "no point";
+			ans = "illegal point";
 		}
 		System.out.println(ans);
 	}
