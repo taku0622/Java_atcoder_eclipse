@@ -24,11 +24,12 @@ public class Ex1_14_2 {
 		double per = 0;
 		int max = 0;
 		if(totalPrice >= 5000) {
-			per = 0.2;
+			max = (int)(Math.floor((totalPrice-5000)*0.2) + Math.floor(4000*0.1));
+
 		}else if (totalPrice >= 1000) {
 			per = 0.1;
+			max = (int)Math.floor(totalPrice*per);
 		}
-		max = (int)Math.floor(totalPrice*per);
 		if(max > 5000) max = 5000;
 		return totalPrice - max;
 	}

@@ -1,4 +1,7 @@
 package udemy01;
+
+import java.util.ArrayList;
+
 /*-< 演習：Ex1_15_2 >---------------------------------
 コメントに従って2次元配列からデータを抽出して画面に表示するプログラムを作ってください。
 ----------------------------------------------------*/
@@ -32,8 +35,16 @@ class Ex1_15_2{
 		**    ※ヒント：年齢の文字列から「歳」を除去する方法について調べてみよう！
 		**  ③adultFemaleDogsListに格納されているすべてのデータをprintlnで表示する
 		*/
-
-
+		ArrayList<String> names = new ArrayList<String>();
+		for(String[] dog: dogs) {
+			String name = dog[0];
+			int age = Integer.parseInt(dog[1].replace("歳", ""));
+			String gender = dog[2];
+			if(age >= 4 || gender.equals("メス")) {
+				names.add(name);
+			}
+		}
+		System.out.println(names);
 	}
 }
 
