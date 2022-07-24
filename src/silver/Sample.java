@@ -122,8 +122,10 @@ public class Sample implements Interface {
 //		b.name = "b";
 //		System.out.println(b.getName());
 //		AClass b = new BClass();
-		AbstractSample s = new ConcreteSample();
-		s.sample();
+//		AbstractSample s = new ConcreteSample();
+//		s.sample();
+		int result = sample();
+		System.out.println(result);
 	}
 	private static void modify(int num) {
 		num*=2;
@@ -143,5 +145,18 @@ public class Sample implements Interface {
 	}
 	private double calc(double a,int b) {
 		return a + b;
+	}
+	private static int sample() {
+		int val = 0;
+		try {
+			String[] array = {"A","B","C"};
+			System.out.println(array[3]);
+		} catch (RuntimeException e) {
+			val = 20;
+			return val;
+		} finally {
+			val += 10;
+		}
+		return val;
 	}
 }
