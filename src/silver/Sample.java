@@ -1,5 +1,7 @@
 package silver;
 
+import java.util.ArrayList;
+
 public class Sample implements Interface {
 
 	public static void main(String[] args) {
@@ -124,8 +126,21 @@ public class Sample implements Interface {
 //		AClass b = new BClass();
 //		AbstractSample s = new ConcreteSample();
 //		s.sample();
-		int result = sample();
-		System.out.println(result);
+//		int result = sample();
+//		System.out.println(result);
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("A");
+		list.add("B");
+		list.add("C");
+		list.add("D");
+		list.add("E");
+		for(String string : list) {
+			if("C".equals(string)) {
+				list.remove(string);
+			}
+		}
+//		list.remove("A");
+		System.out.println(list);
 	}
 	private static void modify(int num) {
 		num*=2;

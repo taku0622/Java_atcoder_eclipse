@@ -40,7 +40,7 @@ class Ex1_15_2{
 			String name = dog[0];
 			int age = Integer.parseInt(dog[1].replace("歳", ""));
 			String gender = dog[2];
-			if(age >= 4 || gender.equals("メス")) {
+			if(age >= 4 && gender.equals("メス")) {
 				names.add(name);
 			}
 		}
