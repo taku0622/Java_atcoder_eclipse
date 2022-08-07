@@ -1,7 +1,8 @@
 package silver;
 
 public class AClass {
-	public AClass() {
-		System.out.println("A");
+	String val = "A";
+	public void print() {
+		System.out.println(val);
 	}
 }

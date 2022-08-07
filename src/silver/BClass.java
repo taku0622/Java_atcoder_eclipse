@@ -1,7 +1,8 @@
 package silver;
 
 public class BClass extends AClass{
-	public BClass() {
-		System.out.println("B");
+	String val = "B";
+	public void print() {
+		System.out.println(val);
 	}
 }
