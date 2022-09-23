@@ -144,6 +144,9 @@ public class Sample implements Interface {
 //		subSample = (SubSample)sampleS;
 		subSample.test();
 		sampleS.test();
+		String string = "abcd ef gh";
+		String string2 = string.substring(8);
+		System.out.println(string2);
 	}
 	private static void modify(int num) {
 		num*=2;
