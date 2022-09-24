@@ -139,14 +139,24 @@ public class Sample implements Interface {
 //		}
 //		list.remove("A");
 //		System.out.println(list);
-		SubSample subSample = new SubSample();
-		SampleS sampleS = new SampleS();
+//		SubSample subSample = new SubSample();
+//		SampleS sampleS = new SampleS();
 //		subSample = (SubSample)sampleS;
-		subSample.test();
-		sampleS.test();
-		String string = "abcd ef gh";
-		String string2 = string.substring(8);
-		System.out.println(string2);
+//		subSample.test();
+//		sampleS.test();
+//		String string = "abcd ef gh";
+//		String string2 = string.substring(8);
+//		System.out.println(string2);
+		String array[][] = new String[2][2];
+		array[0][0] = "a";
+		array[0][1] = "b";
+		array[1][0] = "c";
+		array[1][1] = "d";
+		for(int i=0;i<2;i++) {
+			for(int j=0;j<i;j++) {
+				System.out.println(array[i][j]);
+			}
+		}
 	}
 	private static void modify(int num) {
 		num*=2;
