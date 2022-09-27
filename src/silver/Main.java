@@ -9,8 +9,10 @@ public class Main{
 //		System.out.println(b.val);
 //		a.print();
 //		b.print();
-		SampleC c = new SampleC();
-		c.z();
+//		SampleC c = new SampleC();
+//		c.z();
+		String string = "abcde";
+		System.out.println(string.substring(2,4));
 	}
 
 }
