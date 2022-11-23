@@ -26,6 +26,17 @@ public class ABC278_A {
 		aShift(il);
 	}
 	private static void aShift(ArrayList<Integer> il) {
-		System.out.println(il);
+		int num = il.get(il.size() - 1);
+		il.remove(il.size() - 1);
+		il.remove(il.size() - 1);
+		for(int i=0;i<num;i++) {
+			il.remove(0);
+			il.add(0);
+		}
+		String ans = "";
+		for(int i:il) {
+			ans += i + " ";
+		}
+		System.out.println(ans);
 	}
 }
