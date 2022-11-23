@@ -17,7 +17,7 @@ public class ABC277_A {
 			System.out.println("Input Error!!");
 			return;
 		}
-		str2 += str2 + str1;
+		str2 += " " + str1;
 		String[] sa = str2.split(" ");
 		ArrayList<Integer> il = new ArrayList<Integer>();
 		for(String s:sa) {
@@ -26,6 +26,14 @@ public class ABC277_A {
 		abc277(il);
 	}
 	private static void abc277(ArrayList<Integer> il) {
-		System.out.println(il);
+		int target = il.get(il.size() -1);
+		int count = 0;
+		for(int i=0;i<il.size()-2;i++) {
+			if(il.get(i) == target) {
+				count = i + 1;
+				break;
+			}
+		}
+		System.out.println(count);
 	}
 }
