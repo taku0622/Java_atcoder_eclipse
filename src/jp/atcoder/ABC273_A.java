@@ -22,14 +22,12 @@ public class ABC273_A {
 		}
 		aRecursiveFunction(il);
 	}
+	// f(k)=k×f(k−1)
 	private static void aRecursiveFunction(ArrayList<Integer> il) {
-		int ans = func(il.get(0));
-	}
-	private static int func(int i) {
-		if(i > 0) {
-			return i + func(i-0);
-		} else {
-			return 0;
+		int ans = 1;
+		for(int i = il.get(0); i > 0;i--) {
+			ans *= i;
 		}
+		System.out.println(ans);
 	}
 }
