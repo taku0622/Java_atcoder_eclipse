@@ -12,7 +12,7 @@ public class ABC274_A {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			str1 = br.readLine();
 		}catch (Exception e) {
-			System.out.println("Input Error!Z!");
+			System.out.println("Input Error!!");
 			return;
 		}
 		String[] sa = str1.split(" ");

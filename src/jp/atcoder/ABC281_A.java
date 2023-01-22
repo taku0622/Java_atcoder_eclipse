@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class ABC273_A {
+public class ABC281_A {
 
 	public static void main(String[] args) {
 		String str1;
@@ -20,14 +20,13 @@ public class ABC273_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-		aRecursiveFunction(il);
+		aCountDown(il);
 	}
-	// f(k)=k×f(k−1)
-	private static void aRecursiveFunction(ArrayList<Integer> il) {
-		int ans = 1;
-		for(int i = il.get(0); i > 0;i--) {
-			ans *= i;
+	private static void aCountDown(ArrayList<Integer> il) {
+		int count=il.get(0);
+		while(count >= 0) {
+			System.out.println(count);
+			count--;
 		}
-		System.out.println(ans);
 	}
 }
