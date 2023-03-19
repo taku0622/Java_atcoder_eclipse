@@ -20,9 +20,9 @@ public class ABC293_A {
 		for(char c:ca) {
 			cl.add(c);
 		}
-		aCamelCase(cl);
+		aSwapOddandEven(cl);
 	}
-	private static void aCamelCase(ArrayList<Character> cl) {
+	private static void aSwapOddandEven(ArrayList<Character> cl) {
 		String ans = "";
 		for(int i = 0; i < cl.size()-1; i+=2) {
 //			System.out.println(i);
