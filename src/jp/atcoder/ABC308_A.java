@@ -26,8 +26,9 @@ public class ABC308_A {
 		il.add(700);
 		boolean flag = true;
 		for(int i=0;i<7;i++) {
+//			System.out.println(il.get(i));
 			if(il.get(i)>il.get(i+1)) flag = false;
-			if(il.get(i)<100 || il.get(i) < 675) flag = false;
+			if(il.get(i)<100 || il.get(i) > 675) flag = false;
 			if(il.get(i)%25 != 0) flag = false;
 			if(!flag) {
 				System.out.println("No");
