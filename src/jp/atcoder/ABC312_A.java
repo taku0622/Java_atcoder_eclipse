@@ -16,34 +16,25 @@ public class ABC312_A {
 			return;
 		}
 		String[] sa = str1.split(" ");
-		ArrayList<Integer> il = new ArrayList<Integer>();
+		ArrayList<String> sl = new ArrayList<String>();
 		for(String s:sa) {
-			il.add(Integer.parseInt(s));
+			sl.add(s);
 		}
-		aNine(il);
+		aChord(sl);
 	}
-	private static void  aNine(ArrayList<Integer> il) {
-		int a = il.get(0);
-		int b = il.get(1);
-		String ans = "";
-		if(a==1 && b==2) {
+	private static void  aChord(ArrayList<String> sl) {
+		String ans = "No";
+		switch(sl.get(0)) {
+		case "ACE":
+		case "BDF":
+		case "CEG":
+		case "DFA":
+		case "EGB":
+		case "FAC":
+		case "GBD":
 			ans = "Yes";
-		}else if(a==2 && b==3) {
-			ans = "Yes";
-		}else if(a==4 && b==5) {
-			ans = "Yes";
-		}else if(a==5 && b==6) {
-			ans = "Yes";
-		}else if(a==7 && b==8) {
-			ans = "Yes";
-		}else if(a==8 && b==9) {
-			ans = "Yes";
-		}else {
-			ans = "No";
+			break;
 		}
 		System.out.println(ans);
 	}
-
-
-
 }
