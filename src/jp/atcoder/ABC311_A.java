@@ -22,20 +22,26 @@ public class ABC311_A {
 		for(String s:sa) {
 			il1.add(Integer.parseInt(s));
 		}
-		String[] sa2 = str2.split(" ");
-		ArrayList<Integer> il2 = new ArrayList<Integer>();
+		String[] sa2 = str2.split("");
+		ArrayList<String> il2 = new ArrayList<String>();
 		for(String s:sa2) {
-			il2.add(Integer.parseInt(s));
+			il2.add(s);
 		}
-		aOrderSomethingElse(il1, il2);
+		aFirstABC(il1, il2);
 	}
-	private static void aOrderSomethingElse(ArrayList<Integer> il1, ArrayList<Integer> il2) {
-		int ans = il1.get(1);
-		for(int i=0;i<il1.get(0);i++) {
-			if(ans > il1.get(2) + il2.get(i)) {
-				ans = il1.get(2) + il2.get(i);
+	private static void aFirstABC(ArrayList<Integer> il1, ArrayList<String> il2) {
+		int count = il1.get(0);
+		ArrayList<String> abc = new ArrayList<String>();
+		abc.add("A");
+		abc.add("B");
+		abc.add("C");
+//		System.out.println(abc);
+		for(int i=0;i<count;i++) {
+			abc.remove(il2.get(i));
+			if(abc.size() == 0) {
+				System.out.println(i+1);
+				return;
 			}
 		}
-		System.out.println(ans);
 	}
 }
