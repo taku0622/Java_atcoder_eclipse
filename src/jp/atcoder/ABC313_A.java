@@ -27,21 +27,19 @@ public class ABC313_A {
 		for(String s:sa2) {
 			il2.add(Integer.parseInt(s));
 		}
-		aFirstABC(il1, il2);
+		aToBeSaikyo(il1, il2);
 	}
-	private static void aFirstABC(ArrayList<Integer> il1, ArrayList<Integer> il2) {
-		int count = il1.get(0);
-		ArrayList<String> abc = new ArrayList<String>();
-		abc.add("A");
-		abc.add("B");
-		abc.add("C");
-//		System.out.println(abc);
-		for(int i=0;i<count;i++) {
-			abc.remove(il2.get(i));
-			if(abc.size() == 0) {
-				System.out.println(i+1);
-				return;
+	private static void aToBeSaikyo(ArrayList<Integer> il1, ArrayList<Integer> il2) {
+		int diff = 0;
+		int p1 = il1.get(0);
+		int vol = il1.get(0);
+		for(int i=1;i<vol;i++) {
+			// 大きい
+			if(p1 < il2.get(i)) {
+
+				diff = il2.get(i) - p1;
 			}
 		}
+		System.out.println(diff);
 	}
 }
