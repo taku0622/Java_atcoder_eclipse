@@ -22,7 +22,7 @@ public class ABC313_A {
 		for(String s:sa) {
 			il1.add(Integer.parseInt(s));
 		}
-		String[] sa2 = str2.split("");
+		String[] sa2 = str2.split(" ");
 		ArrayList<Integer> il2 = new ArrayList<Integer>();
 		for(String s:sa2) {
 			il2.add(Integer.parseInt(s));
@@ -31,7 +31,7 @@ public class ABC313_A {
 	}
 	private static void aToBeSaikyo(ArrayList<Integer> il1, ArrayList<Integer> il2) {
 		int diff = 0;
-		int p1 = il1.get(0);
+		int p1 = il2.get(0);
 		int vol = il1.get(0);
 		for(int i=1;i<vol;i++) {
 			// 差
@@ -39,6 +39,7 @@ public class ABC313_A {
 			// 大きいかつ差が大きい
 			if(p1 < il2.get(i) && d > diff) {
 				diff = il2.get(i) - p1 + 1;
+//				System.out.println("il2.get(i):" + il2.get(i) + "-" + "p1" + p1);
 			}else if (diff == 0 && il2.get(i) == p1) {
 				diff = 1;
 			}
