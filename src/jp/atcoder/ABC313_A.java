@@ -34,10 +34,13 @@ public class ABC313_A {
 		int p1 = il1.get(0);
 		int vol = il1.get(0);
 		for(int i=1;i<vol;i++) {
-			// 大きい
-			if(p1 < il2.get(i)) {
-
-				diff = il2.get(i) - p1;
+			// 差
+			int d = il2.get(i) - p1;
+			// 大きいかつ差が大きい
+			if(p1 < il2.get(i) && d > diff) {
+				diff = il2.get(i) - p1 + 1;
+			}else if (diff == 0 && il2.get(i) == p1) {
+				diff = 1;
 			}
 		}
 		System.out.println(diff);
