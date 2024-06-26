@@ -21,19 +21,12 @@ public class ABC359_A {
 			System.out.println("Input Error!!");
 			return;
 		}
-		aMajority(sl);
+		aCountTakahashi(sl);
 	}
-	private static void aMajority(ArrayList<String> sl) {
-		String ans = "Yes";
-		int count = 0;
-		for(int i=0;i<sl.size();i++) {
-			if(sl.get(i).equals("Against")) {
-				count++;
-			}
-			if((sl.size()-1)/2 +1 == count) {
-				ans = "No";
-				break;
-			}
+	private static void aCountTakahashi(ArrayList<String> sl) {
+		int ans = 0;
+		for(String s:sl) {
+			if(s.equals("Takahashi")) ans++;
 		}
 		System.out.println(ans);
 	}
