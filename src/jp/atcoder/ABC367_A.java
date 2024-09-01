@@ -20,9 +20,9 @@ public class ABC367_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-		aElection2(il);
+		aShoutEveryday(il);
 	}
-	private static void aElection2(ArrayList<Integer> il) {
+	private static void aShoutEveryday(ArrayList<Integer> il) {
 		int a = il.get(0);
 		int b = il.get(1);
 		int c = il.get(2);
