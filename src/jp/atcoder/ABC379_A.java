@@ -20,29 +20,13 @@ public class ABC379_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-		a123233(il);
+		aCyclic(il);
 	}
-	private static void a123233(ArrayList<Integer> il) {
-		String ans = "No";
-		int c1 = 0;
-		int c2 = 0;
-		int c3 = 0;
-		for(int i : il) {
-			switch(i){
-				case 1:
-					c1++;
-					break;
-				case 2:
-					c2++;
-					break;
-				case 3:
-					c3++;
-					break;
-			}
-		}
-		if(c1 == 1 && c2 == 2 && c3 == 3) {
-			ans = "Yes";
-		}
+	private static void aCyclic(ArrayList<Integer> il) {
+		String a = il.get(0).toString();
+		String b = il.get(1).toString();
+		String c = il.get(2).toString();
+		String ans = b + c + a + " " + c + a + b;
 		System.out.println(ans);
 	}
 }
