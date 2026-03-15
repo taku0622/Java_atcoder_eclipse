@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class ABC447_A {
+public class ABC449_A {
 
 	public static void main(String[] args) {
 		String str1;
@@ -20,10 +20,13 @@ public class ABC447_A {
 		for(String s:sa) {
 			il.add(Integer.parseInt(s));
 		}
-		aPAI(il);
+		aSeats2(il);
 	}
-	private static void aPAI(ArrayList<Integer> il) {
-		double ans = il.get(0) / 2.0 * il.get(0) / 2.0 * Math.PI;
+	private static void aSeats2(ArrayList<Integer> il) {
+		int n = il.get(0) % 2 != 0 ? il.get(0) + 1 : il.get(0);
+		int m = il.get(1);
+
+		String ans = n / 2 >= m ? "Yes" : "No";
 		System.out.println(ans);
 	}
 }
